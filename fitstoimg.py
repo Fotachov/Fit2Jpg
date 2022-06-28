@@ -24,7 +24,7 @@ for filename in os.listdir(dir_path+"\\data"):
         if im.mode != 'RGB':
             im = im.convert('RGB')
     
-        im.save(dir_path+"\\image\\frame"+counter+".jpg")
+        im.save(dir_path+"\\image\\frame"+str(counter)+".jpg")
         counter += 1
         im.close()
 
